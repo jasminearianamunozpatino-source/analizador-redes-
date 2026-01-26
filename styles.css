@@ -1,49 +1,28 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    padding: 20px;
+    margin: 20px;
+    background-color: #f4f4f4;
 }
 
-h1 {
-    color: #2c3e50;
-}
-
-h2 {
-    color: #34495e;
+header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 form {
-    background-color: white;
-    padding: 15px;
-    width: 300px;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-label {
-    font-weight: bold;
+form label, form input, form select, form button {
+    display: block;
+    margin: 10px 0;
 }
 
-input {
-    width: 100%;
-    padding: 5px;
-}
-
-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 8px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-#resultado {
-    margin-top: 15px;
-    font-weight: bold;
+#charts {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
 }
