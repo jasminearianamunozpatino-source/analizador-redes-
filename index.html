@@ -1,44 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Analizador de Redes Sociales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
 
-<h1>Analizador de Redes Sociales</h1>
-<p style="text-align:center;">
-    Monitoreo de métricas para marketing digital
-</p>
+    <h1>Analizador de Redes Sociales</h1>
+    <p style="text-align:center;">
+        Monitoreo de métricas para marketing digital
+    </p>
 
-<div class="contenedor">
+    <div class="contenedor">
 
-    <!-- FORMULARIO -->
-    <div class="formulario">
-        <h2>Registrar Métricas</h2>
+        <!-- FORMULARIO -->
+        <div class="formulario">
+            <h2>Registrar Métricas</h2>
 
-        <label>Menciones</label>
-        <input type="number" id="menciones">
+            <label>Menciones</label>
+            <input type="number" id="menciones">
 
-        <label>Likes</label>
-        <input type="number" id="likes">
+            <label>Likes</label>
+            <input type="number" id="likes">
 
-        <label>Comentarios</label>
-        <input type="number" id="comentarios">
+            <label>Comentarios</label>
+            <input type="number" id="comentarios">
 
-        <button onclick="analizar()">Analizar</button>
-    </div>
-
-    <!-- RESULTADOS -->
-    <div class="resultados">
-        <h2>Resultados</h2>
-
-        <p id="resultado">
-            Aquí se mostrarán los resultados del análisis.
-        </p>
-
-        <div class="circulo" id="circulo">
-            0%
+            <button onclick="analizar()">Analizar</button>
         </div>
+
+        <!-- RESULTADOS -->
+        <div class="resultados">
+            <h2>Resultados</h2>
+
+            <p id="resultado">
+                Aquí se mostrarán los resultados del análisis.
+            </p>
+
+            <div class="circulo" id="circulo">
+                0%
+            </div>
+        </div>
+
     </div>
 
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
-
+</html>
