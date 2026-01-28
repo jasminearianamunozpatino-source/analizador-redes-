@@ -14,7 +14,7 @@
   </header>
 
   <main class="dashboard">
-    <!-- TABLA DE MÉTRICAS -->
+    <!-- TABLA EDITABLE -->
     <section class="metrics">
       <h2>Métricas del Mes</h2>
       <table>
@@ -27,22 +27,23 @@
         <tbody>
           <tr>
             <td>Menciones</td>
-            <td id="mentions">5</td>
+            <td><input type="number" id="mentions" value="5" min="0"></td>
           </tr>
           <tr>
             <td>Likes</td>
-            <td id="likes">15</td>
+            <td><input type="number" id="likes" value="15" min="0"></td>
           </tr>
           <tr>
             <td>Comentarios</td>
-            <td id="comments">10</td>
+            <td><input type="number" id="comments" value="10" min="0"></td>
           </tr>
           <tr>
             <td>Shares</td>
-            <td id="shares">3</td>
+            <td><input type="number" id="shares" value="3" min="0"></td>
           </tr>
         </tbody>
       </table>
+      <button id="updateBtn">Actualizar Score</button>
     </section>
 
     <!-- CÍRCULO DE DESEMPEÑO -->
