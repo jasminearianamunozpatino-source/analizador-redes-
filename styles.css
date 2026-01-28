@@ -1,5 +1,4 @@
-
- body {
+body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(135deg, #74ebd5, #9face6);
     padding: 20px;
@@ -36,7 +35,6 @@ label {
 input {
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
     margin-bottom: 15px;
 }
 
@@ -55,7 +53,6 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* CÍRCULO ESTADÍSTICO */
 .circulo {
     width: 150px;
     height: 150px;
@@ -65,7 +62,4 @@ button:hover {
     align-items: center;
     justify-content: center;
     font-size: 22px;
-    font-weight: bold;
-    color: #2c3e50;
-    margin: auto;
-}
+    font-weig
