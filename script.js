@@ -1,19 +1,18 @@
 function analizar() {
-    let menciones = document.getElementById("menciones").value;
-    let likes = document.getElementById("likes").value;
-    let comentarios = document.getElementById("comentarios").value;
+    let menciones = Number(document.getElementById("menciones").value);
+    let likes = Number(document.getElementById("likes").value);
+    let comentarios = Number(document.getElementById("comentarios").value);
 
-    let totalInteracciones = Number(likes) + Number(comentarios);
-
-    let tendencia = "";
-
-    if (totalInteracciones > 100) {
-        tendencia = "Alta interacción 📈";
-    } else {
-        tendencia = "Interacción baja 📉";
-    }
+    let total = likes + comentarios;
+    let porcentaje = Math.min((total / 200) * 100, 100);
 
     document.getElementById("resultado").innerHTML =
-        "Total de interacciones: " + totalInteracciones + "<br>" +
-        "Tendencia detectada: " + tendencia;
+        "<b>Menciones:</b> " + menciones + "<br>" +
+        "<b>Total de interacciones:</b> " + total;
+
+    let circulo = document.getElementById("circulo");
+    circulo.style.background =
+        `conic-gradient(#2ecc71 ${porcentaje}%, #ecf0f1 ${porcentaje}%)`;
+
+    circulo.innerHTML = Math.round(porcentaje) + "%";
 }
