@@ -1,14 +1,14 @@
-/* RESET BÁSICO */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY Y TIPOGRAFÍA */
+/* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #cce7ff; /* Fondo celeste claro */
+  background-color: #cce7ff; /* Fondo celeste */
   color: #333;
   min-height: 100vh;
   display: flex;
@@ -67,7 +67,6 @@ header p {
   background-color: #99ccff;
 }
 
-/* INPUT */
 .metrics input[type="number"] {
   width: 80px;
   padding: 5px;
@@ -76,7 +75,7 @@ header p {
 }
 
 /* BOTÓN */
-button#updateBtn {
+button#actualizarBtn {
   margin-top: 15px;
   padding: 8px 15px;
   font-size: 16px;
@@ -88,11 +87,11 @@ button#updateBtn {
   transition: background 0.3s;
 }
 
-button#updateBtn:hover {
+button#actualizarBtn:hover {
   background-color: #005fa3;
 }
 
-/* CÍRCULO DE DESEMPEÑO */
+/* CÍRCULO */
 .performance {
   flex: 1;
   min-width: 200px;
@@ -111,27 +110,26 @@ button#updateBtn:hover {
   font-size: 36px;
   font-weight: bold;
   color: white;
-  background: conic-gradient(#ccc 0%, #ccc 100%);
-  transition: background 0.6s ease, color 0.6s ease;
+  background: #ccc;
+  transition: background 0.5s, color 0.5s;
   margin-bottom: 15px;
 }
 
-/* COLORES DEL CÍRCULO */
 .red {
-  background: conic-gradient(#8e0000, #ff5252);
+  background-color: #ff4d4d;
 }
 
 .yellow {
-  background: conic-gradient(#f9a825, #fff59d);
+  background-color: #ffeb3b;
   color: #333;
 }
 
 .green {
-  background: conic-gradient(#1b5e20, #66bb6a);
+  background-color: #4caf50;
 }
 
 /* MENSAJE */
-#message {
+#mensaje {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
