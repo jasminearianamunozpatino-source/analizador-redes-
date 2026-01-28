@@ -8,7 +8,7 @@
 /* BODY Y TIPOGRAFÍA */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #cce7ff; /* Fondo celeste claro */
+  background-color: #cce7ff; /* Fondo celeste */
   color: #333;
   min-height: 100vh;
   display: flex;
@@ -31,7 +31,7 @@ header p {
   color: #555;
 }
 
-/* DASHBOARD: tabla izquierda, círculo derecha */
+/* DASHBOARD */
 .dashboard {
   display: flex;
   justify-content: space-around;
@@ -91,18 +91,16 @@ header p {
   margin-bottom: 15px;
 }
 
-/* ROJO - BAJO DESEMPEÑO */
+/* COLORES DEL CÍRCULO */
 .red {
   background: conic-gradient(#8e0000, #ff5252);
 }
 
-/* AMARILLO - MEDIO DESEMPEÑO */
 .yellow {
   background: conic-gradient(#f9a825, #fff59d);
   color: #333;
 }
 
-/* VERDE - ALTO DESEMPEÑO */
 .green {
   background: conic-gradient(#1b5e20, #66bb6a);
 }
