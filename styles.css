@@ -1,86 +1,59 @@
-/* RESET BÁSICO */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analizador de Redes Sociales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* BODY Y TIPOGRAFÍA */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+  <header>
+    <h1>Analizador de Redes Sociales</h1>
+    <p>Dashboard de desempeño en Marketing Digital</p>
+  </header>
 
-/* HEADER */
-header {
-  padding: 30px 20px 10px 20px;
-}
+  <main class="dashboard">
+    <!-- TABLA DE MÉTRICAS -->
+    <div class="metrics">
+      <h2>Métricas del Mes</h2>
+      <table>
+        <tr>
+          <th>Métrica</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Menciones</td>
+          <td id="mentions">5</td>
+        </tr>
+        <tr>
+          <td>Likes</td>
+          <td id="likes">15</td>
+        </tr>
+        <tr>
+          <td>Comentarios</td>
+          <td id="comments">10</td>
+        </tr>
+        <tr>
+          <td>Shares</td>
+          <td id="shares">3</td>
+        </tr>
+      </table>
+    </div>
 
-header h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
+    <!-- CÍRCULO DE DESEMPEÑO -->
+    <div class="performance">
+      <div class="circle" id="circle">
+        <span id="value">0</span>
+      </div>
+      <p id="message"></p>
+    </div>
+  </main>
 
-header p {
-  font-size: 1.1em;
-  color: #555;
-}
+  <footer>
+    <p>Proyecto académico – Marketing Digital</p>
+  </footer>
 
-/* CONTENEDOR DEL CÍRCULO */
-.container {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-/* CÍRCULO DEL SCORE */
-.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 38px;
-  font-weight: bold;
-  color: white;
-  background: conic-gradient(#ccc 0%, #ccc 100%);
-  transition: background 0.6s ease, color 0.6s ease;
-}
-
-/* ROJO - BAJO DESEMPEÑO */
-.red {
-  background: conic-gradient(#8e0000, #ff5252);
-}
-
-/* AMARILLO - DESEMPEÑO MEDIO */
-.yellow {
-  background: conic-gradient(#f9a825, #fff59d);
-  color: #333;
-}
-
-/* VERDE - ALTO DESEMPEÑO */
-.green {
-  background: conic-gradient(#1b5e20, #66bb6a);
-}
-
-/* MENSAJE DE TEXTO */
-#message {
-  margin-top: 25px;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0 20px;
-}
-
-/* FOOTER */
-footer {
-  margin-top: auto;
-  padding: 20px 0;
-  font-size: 0.9em;
-  color: #777;
-}
+  <script src="script.js"></script>
+</body>
+</html>
