@@ -10,17 +10,44 @@
 
   <header>
     <h1>Analizador de Redes Sociales</h1>
-    <p>Indicador de desempeño en Marketing Digital</p>
+    <p>Dashboard de desempeño en Marketing Digital</p>
   </header>
 
-  <main>
-    <div class="container">
+  <main class="dashboard">
+    <!-- TABLA DE MÉTRICAS -->
+    <div class="metrics">
+      <h2>Métricas del Mes</h2>
+      <table>
+        <tr>
+          <th>Métrica</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Menciones</td>
+          <td id="mentions">5</td>
+        </tr>
+        <tr>
+          <td>Likes</td>
+          <td id="likes">15</td>
+        </tr>
+        <tr>
+          <td>Comentarios</td>
+          <td id="comments">10</td>
+        </tr>
+        <tr>
+          <td>Shares</td>
+          <td id="shares">3</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- CÍRCULO DE DESEMPEÑO -->
+    <div class="performance">
       <div class="circle" id="circle">
         <span id="value">0</span>
       </div>
+      <p id="message"></p>
     </div>
-
-    <p id="message"></p>
   </main>
 
   <footer>
