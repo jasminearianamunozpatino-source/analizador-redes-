@@ -46,12 +46,19 @@
       <button id="actualizarBtn">Actualizar Resultado</button>
     </section>
 
-    <!-- CÍRCULO DE RESULTADO -->
+    <!-- CÍRCULOS DE RESULTADO -->
     <section class="performance">
-      <div class="circle" id="circle">
-        <span id="valor">0</span>
+      <!-- Primer círculo: score promedio -->
+      <div class="circle" id="circleScore">
+        <span id="valorScore">0</span>
       </div>
-      <p id="mensaje"></p>
+      <p id="mensajeScore"></p>
+
+      <!-- Segundo círculo: porcentaje de efectividad -->
+      <div class="circle" id="circlePercent">
+        <span id="valorPercent">0%</span>
+      </div>
+      <p id="mensajePercent"></p>
     </section>
   </main>
 
