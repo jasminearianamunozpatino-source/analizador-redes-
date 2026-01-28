@@ -1,22 +1,44 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
-  text-align: center;
+/* RESET BÁSICO */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  margin-top: 30px;
+/* BODY Y TIPOGRAFÍA */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
   color: #333;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* HEADER */
+header {
+  padding: 30px 20px 10px 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* CONTENEDOR DEL CÍRCULO */
 .container {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
 
+/* CÍRCULO DEL SCORE */
 .circle {
   width: 200px;
   height: 200px;
@@ -27,28 +49,38 @@ h1 {
   font-size: 38px;
   font-weight: bold;
   color: white;
-  transition: background 0.6s ease;
+  background: conic-gradient(#ccc 0%, #ccc 100%);
+  transition: background 0.6s ease, color 0.6s ease;
 }
 
-/* 🔴 ROJO: BAJO DESEMPEÑO */
+/* ROJO - BAJO DESEMPEÑO */
 .red {
   background: conic-gradient(#8e0000, #ff5252);
 }
 
-/* 🟡 AMARILLO: DESEMPEÑO MEDIO */
+/* AMARILLO - DESEMPEÑO MEDIO */
 .yellow {
   background: conic-gradient(#f9a825, #fff59d);
   color: #333;
 }
 
-/* 🟢 VERDE: ALTO DESEMPEÑO */
+/* VERDE - ALTO DESEMPEÑO */
 .green {
   background: conic-gradient(#1b5e20, #66bb6a);
 }
 
+/* MENSAJE DE TEXTO */
 #message {
   margin-top: 25px;
   font-size: 20px;
   font-weight: bold;
   padding: 0 20px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: auto;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #777;
 }
