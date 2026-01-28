@@ -1,65 +1,54 @@
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #9face6);
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    text-align: center;
-    color: #2c3e50;
+  margin-top: 30px;
+  color: #333;
 }
 
-h2 {
-    color: #34495e;
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.contenedor {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 30px;
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  font-weight: bold;
+  color: white;
+  transition: background 0.6s ease;
 }
 
-.formulario, .resultados {
-    background-color: white;
-    padding: 20px;
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+/* 🔴 ROJO: BAJO DESEMPEÑO */
+.red {
+  background: conic-gradient(#8e0000, #ff5252);
 }
 
-label {
-    font-weight: bold;
+/* 🟡 AMARILLO: DESEMPEÑO MEDIO */
+.yellow {
+  background: conic-gradient(#f9a825, #fff59d);
+  color: #333;
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
+/* 🟢 VERDE: ALTO DESEMPEÑO */
+.green {
+  background: conic-gradient(#1b5e20, #66bb6a);
 }
 
-button {
-    width: 100%;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
+#message {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 20px;
 }
-
-button:hover {
-    background-color: #2980b9;
-}
-
-.circulo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: conic-gradient(#2ecc71 0%, #ecf0f1 0%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weig
