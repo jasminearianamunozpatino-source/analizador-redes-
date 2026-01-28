@@ -4,8 +4,7 @@ const likes = parseInt(document.getElementById("likes").textContent);
 const comments = parseInt(document.getElementById("comments").textContent);
 const shares = parseInt(document.getElementById("shares").textContent);
 
-// CALCULAR SCORE SIMPLE
-// Aquí puedes definir tu fórmula, por ejemplo: promedio ponderado
+// CALCULAR SCORE PROMEDIO
 const score = Math.min(
   Math.round((mentions + likes + comments + shares) / 4),
   100
